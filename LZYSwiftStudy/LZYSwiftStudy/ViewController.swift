@@ -21,7 +21,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.view.backgroundColor = .white
-        self.navigationItem.title = "home"
+        self.title = "home"
         
         table = UITableView(frame: CGRect(x: 0, y: 44, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height), style: UITableView.Style.grouped)
         table.backgroundColor = UIColor.init(red: 247/255, green: 247/255, blue: 247/255, alpha: 1)
@@ -64,8 +64,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         // 3.创建对应的控制器对象
         let vc = className.init()
-        let fontvc = FontViewController()
-        self.navigationController?.pushViewController(fontvc, animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func loadData() {

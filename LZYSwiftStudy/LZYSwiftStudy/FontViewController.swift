@@ -16,6 +16,7 @@ class FontViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.title = "改变字体"
         self.view.backgroundColor = .white
         
         label.text = "font name"

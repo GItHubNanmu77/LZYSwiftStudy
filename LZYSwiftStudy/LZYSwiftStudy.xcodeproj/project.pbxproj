@@ -14,6 +14,12 @@
 		31DC489F2400EDD4008E2E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DC489E2400EDD4008E2E0D /* Assets.xcassets */; };
 		31DC48A22400EDD4008E2E0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DC48A02400EDD4008E2E0D /* LaunchScreen.storyboard */; };
 		31DC48AA24010D96008E2E0D /* FontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DC48A924010D96008E2E0D /* FontViewController.swift */; };
+		31DC48AC24025B0E008E2E0D /* LLTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DC48AB24025B0E008E2E0D /* LLTabbarViewController.swift */; };
+		31DC48AE24025B27008E2E0D /* LLNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DC48AD24025B27008E2E0D /* LLNavViewController.swift */; };
+		31DC48B124025BBB008E2E0D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DC48B024025BBB008E2E0D /* HomeViewController.swift */; };
+		31DC48B324025BC4008E2E0D /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DC48B224025BC4008E2E0D /* MineViewController.swift */; };
+		31DC48B524025F49008E2E0D /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DC48B424025F49008E2E0D /* HomeDetailViewController.swift */; };
+		31DC48B724027F71008E2E0D /* HomeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DC48B624027F71008E2E0D /* HomeTitleView.swift */; };
 		39B58DB2CB6FA41C1093506E /* Pods_LZYSwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB408BB302DB22608894E34A /* Pods_LZYSwiftStudy.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +34,12 @@
 		31DC48A12400EDD4008E2E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31DC48A32400EDD4008E2E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31DC48A924010D96008E2E0D /* FontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontViewController.swift; sourceTree = "<group>"; };
+		31DC48AB24025B0E008E2E0D /* LLTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLTabbarViewController.swift; sourceTree = "<group>"; };
+		31DC48AD24025B27008E2E0D /* LLNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLNavViewController.swift; sourceTree = "<group>"; };
+		31DC48B024025BBB008E2E0D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		31DC48B224025BC4008E2E0D /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		31DC48B424025F49008E2E0D /* HomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
+		31DC48B624027F71008E2E0D /* HomeTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTitleView.swift; sourceTree = "<group>"; };
 		8761B62868CC7C0DD12E9D70 /* Pods-LZYSwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZYSwiftStudy.debug.xcconfig"; path = "Target Support Files/Pods-LZYSwiftStudy/Pods-LZYSwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		BB408BB302DB22608894E34A /* Pods_LZYSwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZYSwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,12 +81,42 @@
 				31DC48972400EDD1008E2E0D /* SceneDelegate.swift */,
 				31DC48992400EDD1008E2E0D /* ViewController.swift */,
 				31DC48A924010D96008E2E0D /* FontViewController.swift */,
+				31DC48AF24025B31008E2E0D /* Module */,
 				31DC489B2400EDD1008E2E0D /* Main.storyboard */,
 				31DC489E2400EDD4008E2E0D /* Assets.xcassets */,
 				31DC48A02400EDD4008E2E0D /* LaunchScreen.storyboard */,
 				31DC48A32400EDD4008E2E0D /* Info.plist */,
 			);
 			path = LZYSwiftStudy;
+			sourceTree = "<group>";
+		};
+		31DC48AF24025B31008E2E0D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				31DC48B824027F78008E2E0D /* VC */,
+				31DC48B924027F83008E2E0D /* View */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		31DC48B824027F78008E2E0D /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				31DC48AB24025B0E008E2E0D /* LLTabbarViewController.swift */,
+				31DC48AD24025B27008E2E0D /* LLNavViewController.swift */,
+				31DC48B024025BBB008E2E0D /* HomeViewController.swift */,
+				31DC48B224025BC4008E2E0D /* MineViewController.swift */,
+				31DC48B424025F49008E2E0D /* HomeDetailViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		31DC48B924027F83008E2E0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				31DC48B624027F71008E2E0D /* HomeTitleView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		666A5148B1117C43DB2CDFAE /* Pods */ = {
@@ -210,8 +252,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				31DC489A2400EDD1008E2E0D /* ViewController.swift in Sources */,
+				31DC48AC24025B0E008E2E0D /* LLTabbarViewController.swift in Sources */,
+				31DC48AE24025B27008E2E0D /* LLNavViewController.swift in Sources */,
+				31DC48B524025F49008E2E0D /* HomeDetailViewController.swift in Sources */,
+				31DC48B724027F71008E2E0D /* HomeTitleView.swift in Sources */,
+				31DC48B324025BC4008E2E0D /* MineViewController.swift in Sources */,
 				31DC48AA24010D96008E2E0D /* FontViewController.swift in Sources */,
 				31DC48962400EDD1008E2E0D /* AppDelegate.swift in Sources */,
+				31DC48B124025BBB008E2E0D /* HomeViewController.swift in Sources */,
 				31DC48982400EDD1008E2E0D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
