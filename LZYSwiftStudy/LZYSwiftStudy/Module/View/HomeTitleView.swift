@@ -16,6 +16,7 @@ class HomeTitleView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.backgroundColor = .white
         
         timeLabel.text = "2020-02-22"
         timeLabel.textColor = UIColor.red

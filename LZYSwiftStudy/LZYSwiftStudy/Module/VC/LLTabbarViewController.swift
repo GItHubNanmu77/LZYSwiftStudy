@@ -20,6 +20,7 @@ class LLTabbarViewController: UITabBarController {
     
     func initChildrenVC() {
         initNaviagtionController(vc: HomeViewController(), title: "首页", image: "apple", selectedImage: "apple-select")
+        initNaviagtionController(vc: GameViewController(), title: "游戏", image: "update", selectedImage: "update-select")
         initNaviagtionController(vc: MineViewController(), title: "我的", image: "update", selectedImage: "update-select")
     }
     
